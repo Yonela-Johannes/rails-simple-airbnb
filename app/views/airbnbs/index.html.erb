@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Airbnbs</h1>
+
+<div id="airbnbs">
+  <% @airbnbs.each do |airbnb| %>
+    <%= render airbnb %>
+    <p>
+      <%= link_to "Show this airbnb", airbnb %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New airbnb", new_airbnb_path %>

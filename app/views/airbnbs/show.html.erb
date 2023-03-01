@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @airbnb %>
+
+<div>
+  <%= link_to "Edit this airbnb", edit_airbnb_path(@airbnb) %> |
+  <%= link_to "Back to airbnbs", airbnbs_path %>
+
+  <%= button_to "Destroy this airbnb", @airbnb, method: :delete %>
+</div>
